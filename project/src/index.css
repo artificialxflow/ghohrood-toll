@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    font-family: 'Vazirmatn', 'Tahoma', sans-serif;
+  }
+
+  body {
+    direction: rtl;
+  }
+
+  input[type="number"] {
+    direction: ltr;
+    text-align: right;
+  }
+
+  select {
+    background-position: left 0.5rem center;
+  }
+}
+
+@layer components {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+}
